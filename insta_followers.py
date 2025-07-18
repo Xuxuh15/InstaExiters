@@ -45,7 +45,7 @@ for username in following_usernames:
 # Print the users not following you back
 print("Users not following you back:")
 for i,user in enumerate(not_following_back):
-    print(f'{i}: {user}' )
+    print(f'{i+1}: {user}' )
 
 
 
