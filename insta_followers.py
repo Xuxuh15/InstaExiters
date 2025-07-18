@@ -21,6 +21,7 @@ following_file = args.following_file
 followers_list = {} # dict for O(1) access by username
 following_usernames = []  # list of usernames you're following
 
+#Load followers file and build list
 with open(followers_file) as file:
     data = json.load(file)
     for user in data:
@@ -38,6 +39,7 @@ with open(following_file) as file:
 # Find people you follow who do NOT follow you back
 not_following_back = []
 
+# Compare the lists
 for username in following_usernames:
     if username not in followers_list:
         not_following_back.append(username)
