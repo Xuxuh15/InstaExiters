@@ -1,0 +1,7 @@
+# JSON files 
+*.json
+# Byte-compiled
+__pycache__/
+# DS Store
+*.DS_Store
+
